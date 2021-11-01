@@ -1,0 +1,168 @@
+<style>
+	input{
+	width: 30px;
+  }
+  .quantity {
+	width: 13px;
+	height: 20px;
+	background-color: blue;
+  }
+  .red{
+	width: 13px;
+	height: 20px;
+	background-color: red;
+  }
+  .green{
+	width: 13px;
+	height: 20px;
+	background-color: green;
+  }
+  .orange{
+	width: 13px;
+	height: 20px;
+	background-color: orange;
+  }
+  .blue{
+	width: 13px;
+	height: 20px;
+	background-color: blue;
+  }
+button {
+width: 50px
+}
+
+
+</style>
+
+<body>
+
+<svg id="svg" width="355" height="600" style="background: rgba(0, 0, 255, 0.1)"  xmlns="http://www.w3.org          /2000/svg" version="1.1">
+	
+  <line id="vertical" x1="40" y1="580" x2="40" y2="-1000" stroke="rgba(255, 0, 0, 0.5)" stroke-width="2%"/>
+  <polygon points="40 20 35 40 45 40" stroke="black" fill="black"/>
+  <line x1="10" y1="580" x2="355" y2="580" stroke="green" stroke.width='1%'/>
+  
+  <g id='wrapper'>
+	  <line id='firstDashFirst'  x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+    <line id='secondDashFirst' x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+    <line id='thirdDashFirst'  x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+    <line id='fourthDashFirst' x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+	
+    <line id='secondDashSecond' x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+    <line id='firstDashSecond'  x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+    <line id='fourthDashSecond' x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+    <line id='thirdDashSecond'  x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+
+    <line id='secondDashThird' x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+    <line id='thirdDashThird'  x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+    <line id='fourthDashThird' x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+    
+    <line id="redFirstLine"    x1='95' y1='0' x2='95' y2='0' stroke='red'    stroke-width='3%'/>
+    <line id="greenFirstLine"  x1='95' y1='0' x2='95' y2='0' stroke='green'  stroke-width='3%'/>
+    <line id="orangeFirstLine" x1='95' y1='0' x2='95' y2='0' stroke='orange' stroke-width='3%'/>
+    <line id="blueFirstLine"   x1='95' y1='0' x2='95' y2='0' stroke='blue'   stroke-width='3%'/>
+    
+    <line id="redSecondLine"    x1='200' y1='0' x2='200' y2='0' stroke='red'    stroke-width='3%'/>
+    <line id="greenSecondLine"  x1='200' y1='0' x2='200' y2='0' stroke='green'  stroke-width='3%'/>
+    <line id="orangeSecondLine" x1='200' y1='0' x2='200' y2='0' stroke='orange' stroke-width='3%'/>
+    <line id="blueSecondLine"   x1='200' y1='0' x2='200' y2='0' stroke='blue'   stroke-width='3%'/>
+    
+    <line id="redThirdLine"    x1='310' y1='0' x2='310' y2='0' stroke='red'    stroke-width='3%'/>
+    <line id="greenThirdLine"  x1='310' y1='0' x2='310' y2='0' stroke='green'  stroke-width='3%'/>
+    <line id="orangeThirdLine" x1='310' y1='0' x2='310' y2='0' stroke='orange' stroke-width='3%'/>
+    <line id="blueThirdLine"   x1='310' y1='0' x2='310' y2='0' stroke='blue'   stroke-width='3%'/>
+  </g>  
+  <line id='firstDashThird'  x1='10' x2='355' y1='580' y2='580' stroke='brown' stroke-width='0.1%' stroke-dasharray='1% 1%'/>
+  
+  <text id='firstNumberFirst'  x='15' y='-100'></text>
+  <text id='secondNumberFirst' x='15' y='-100'></text>
+  <text id='thirdNumberFirst'  x='15' y='-100'></text>
+  <text id='fourthNumberFirst' x='15' y='-100'></text>
+
+  <text id='firstNumberSecond'  x='15' y='-100'></text>
+  <text id='secondNumberSecond' x='15' y='-100'></text>
+  <text id='thirdNumberSecond'  x='15' y='-100'></text>
+  <text id='fourthNumberSecond' x='15' y='-100'></text>
+  
+  <text id='firstNumberThird'  x='15' y='-100'></text>
+  <text id='secondNumberThird' x='15' y='-100'></text>
+  <text id='thirdNumberThird'  x='15' y='-100'></text>
+  <text id='fourthNumberThird' x='15' y='-100'></text>
+  
+  <text x='15' y='595'>0</text>
+   
+</svg>
+ 
+
+
+
+<div style="display: flex;">
+  <div style="width: 60px">
+	<button id='plus' style='height: 50px'>+</button>
+	<button id='minus' style='height: 50px'>-</button>
+  </div>
+  <table>
+	<tr>
+	  <td class="red"></td>
+	  <td class="quantity"><input id="redFirstInput" type="text"></td>
+	</tr>
+  <div style="width: 25px;"></div>
+	<tr>
+	 <td class="green"></td>
+	 <td class="quantity"><input id="greenFirstInput" type="text"></td>
+	</tr>
+	<tr>
+	 <td class="orange"></td>
+	 <td class="quantity"><input id="orangeFirstInput" type="text"></td>
+	</tr>
+	<tr>
+	  <td class="blue"></td>
+	  <td class="quantity"><input id="blueFirstInput" type="text"></td>
+	</tr>  
+ </table>
+ <div style="width: 30px;"></div>
+ <table>
+   <tr>
+	 <td class="red"></td>
+	 <td class="quantity"><input id="redSecondInput" type="text"></td>
+   </tr>
+   <div style="width: 23px;"></div>
+   <tr>
+	 <td class="green"></td>
+	 <td class="quantity"><input id="greenSecondInput" type="text"></td>
+   </tr>
+   <tr>
+	 <td class="orange"></td>
+	 <td class="quantity"><input id="orangeSecondInput" type="text"></td>
+   </tr>
+   <tr>
+	 <td class="blue"></td>
+	 <td class="quantity"><input id="blueSecondInput" type="text"></td>
+   </tr>  
+ </table> 
+ <div style="width: 30px;"></div> 
+ <table>
+   <tr>
+	 <td class="red"></td>
+	 <td class="quantity"><input id="redThirdInput" type="text"></td>
+   </tr>
+   <div style="width: 27px;"></div>
+   <tr>
+	 <td class="green"></td>
+	 <td class="quantity"><input id="greenThirdInput" type="text"></td>
+   </tr>
+   <tr>
+	 <td class="orange"></td>
+	 <td class="quantity"><input id="orangeThirdInput" type="text"></td>
+   </tr>
+   <tr>
+	 <td class="blue"></td>
+	 <td class="quantity"><input id="blueThirdInput" type="text"></td>
+   </tr>  
+ </table> 
+</div>
+ 
+ <script src="scheme.js"></script>
+ 
+</ body>
+
